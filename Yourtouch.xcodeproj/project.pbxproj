@@ -420,7 +420,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A30B7945131FE382E6DD40D /* Pods-Yourtouch.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon6;
 				DEVELOPMENT_TEAM = HQJH2FAWDR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,7 +438,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D86046170AEF3239E9815B7 /* Pods-Yourtouch.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon6;
 				DEVELOPMENT_TEAM = HQJH2FAWDR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
