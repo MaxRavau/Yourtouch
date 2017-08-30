@@ -78,11 +78,11 @@ class AddNewMessageViewController: UIViewController, UITextViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func SaveText(_ sender: Any) {
+    @IBAction func buttonSaveArt(_ sender: Any) {
         
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        let task = Message(context: context) // Link Task & Context
+        let task = Message(context: context)// Link Task & Context
+        
         task.text = textView.text!
         task.date = NSDate()
         
@@ -90,8 +90,8 @@ class AddNewMessageViewController: UIViewController, UITextViewDelegate {
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
         let _ = navigationController?.popViewController(animated: true)
-
         
     }
     
+        
 }

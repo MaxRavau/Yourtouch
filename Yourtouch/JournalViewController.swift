@@ -72,10 +72,7 @@ class JournalViewController: UIViewController, UITableViewDataSource, UITableVie
         
     }
     
-    
-    
-    @IBAction func menu_Action(_ sender: UIBarButtonItem) {
-        
+    @IBAction func menuButtonTap(_ sender: UIBarButtonItem) {
         
         if AppDelegate.menu_bool{
             
@@ -85,9 +82,12 @@ class JournalViewController: UIViewController, UITableViewDataSource, UITableVie
             
             close_Menu()
         }
+
         
     }
     
+    
+        
     func closeOnSwipe(){
         
         if AppDelegate.menu_bool{
@@ -202,7 +202,7 @@ class JournalViewController: UIViewController, UITableViewDataSource, UITableVie
         
         return tasks.count
     }
-    
+
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {

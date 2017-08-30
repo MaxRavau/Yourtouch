@@ -161,6 +161,13 @@ class MenuViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
     }
 
+    @IBAction func buttonPartage(_ sender: Any) {
+        let activityVC = UIActivityViewController(activityItems: [#imageLiteral(resourceName: "images")], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+        
+        self.present(activityVC, animated: true, completion: nil)
+        
+    }
 }
     
     

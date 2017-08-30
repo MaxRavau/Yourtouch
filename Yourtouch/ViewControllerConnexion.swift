@@ -153,7 +153,7 @@ class ViewControllerConnexion: UIViewController, UITextFieldDelegate {
         content.subtitle = "Viens nous voir.."
         
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 172800, repeats: false)
         let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
