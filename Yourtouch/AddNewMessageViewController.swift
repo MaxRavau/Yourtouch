@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class AddNewMessageViewController: UIViewController, UITextViewDelegate {
 
@@ -19,6 +20,8 @@ class AddNewMessageViewController: UIViewController, UITextViewDelegate {
     let date = NSDate()
     
     
+    var player = AVAudioPlayer()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +34,21 @@ class AddNewMessageViewController: UIViewController, UITextViewDelegate {
         labelDate.text = formatter.string(from: date as Date)
         
         textView.delegate = self
+        
+        do {
+            
+            let audioPath = Bundle.main.path(forResource: "send", ofType: "wav")
+            try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        }
+        catch {
+            // ERREUR
+            
+            
+            
+        }
+
+        
+    
         
     }
     
@@ -66,11 +84,11 @@ class AddNewMessageViewController: UIViewController, UITextViewDelegate {
         
         buttonSave.layer.cornerRadius = 10
         
-        textView.layer.borderColor = UIColor.lightGray.cgColor
-        textView.layer.borderWidth = 0.8
-        
-        
-        
+        textView.layer.shadowColor = UIColor.black.cgColor
+        textView.layer.shadowOpacity = 0.5
+        textView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        textView.layer.shadowRadius = 3
+        textView.layer.masksToBounds = false
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,6 +97,8 @@ class AddNewMessageViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func buttonSaveArt(_ sender: Any) {
+        
+        
         
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let task = Message(context: context)// Link Task & Context
@@ -89,7 +109,12 @@ class AddNewMessageViewController: UIViewController, UITextViewDelegate {
         // Save the data to coredata
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
+        
+        player.play()
+        
         let _ = navigationController?.popViewController(animated: true)
+        
+        
         
     }
     

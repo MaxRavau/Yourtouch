@@ -187,10 +187,11 @@ class JournalViewController: UIViewController, UITableViewDataSource, UITableVie
         
         cell.labelName.text = username as! String?
         
-        cell.viewBackground.layer.cornerRadius = 10
-        cell.viewBackground.layer.borderWidth = 1
-        cell.viewBackground.layer.borderColor = UIColor.black.cgColor
-        
+        cell.viewBackground.layer.masksToBounds = false
+        cell.viewBackground.layer.shadowColor = UIColor.black.cgColor
+        cell.viewBackground.layer.shadowOpacity = 0.5
+        cell.viewBackground.layer.shadowOffset = CGSize(width: 1, height: 1)
+        cell.viewBackground.layer.shadowRadius = 3
         
         return cell
     }

@@ -33,6 +33,7 @@
 		507EFCAB1F4DC6B400D9C38A /* AddNewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EFCAA1F4DC6B400D9C38A /* AddNewMessageViewController.swift */; };
 		507EFCAD1F4DCAE900D9C38A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EFCAC1F4DCAE900D9C38A /* MenuViewController.swift */; };
 		507EFCAF1F4DCEA500D9C38A /* ResertAdressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EFCAE1F4DCEA500D9C38A /* ResertAdressViewController.swift */; };
+		5094193F1F7289B800CF2C27 /* send.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5094193E1F7289B800CF2C27 /* send.wav */; };
 		DB461DD15E08AA509EB852E4 /* Pods_Yourtouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D0382E7B42396AD763768A /* Pods_Yourtouch.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		507EFCAA1F4DC6B400D9C38A /* AddNewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMessageViewController.swift; sourceTree = "<group>"; };
 		507EFCAC1F4DCAE900D9C38A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		507EFCAE1F4DCEA500D9C38A /* ResertAdressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResertAdressViewController.swift; sourceTree = "<group>"; };
+		5094193E1F7289B800CF2C27 /* send.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = send.wav; sourceTree = "<group>"; };
 		72D0382E7B42396AD763768A /* Pods_Yourtouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yourtouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 				507EFCAE1F4DCEA500D9C38A /* ResertAdressViewController.swift */,
 				507EFC6F1F4D916800D9C38A /* Main.storyboard */,
 				506A84BC1F506B200077F3F1 /* Yourtouch.xcdatamodeld */,
+				5094193E1F7289B800CF2C27 /* send.wav */,
 				507EFC751F4D916800D9C38A /* Assets.xcassets */,
 				507EFC771F4D916800D9C38A /* LaunchScreen.storyboard */,
 				507EFC7A1F4D916800D9C38A /* Info.plist */,
@@ -235,6 +238,7 @@
 			files = (
 				507EFC791F4D916800D9C38A /* LaunchScreen.storyboard in Resources */,
 				507EFC761F4D916800D9C38A /* Assets.xcassets in Resources */,
+				5094193F1F7289B800CF2C27 /* send.wav in Resources */,
 				507EFC711F4D916800D9C38A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
